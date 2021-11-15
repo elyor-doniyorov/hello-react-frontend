@@ -1,31 +1,4 @@
-.display {
-  width: fit-content;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  font-size: 20px;
-  background-color: rgb(34, 212, 78);
-  padding: 60px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
-
-hr {
-  width: 70%;
-}
-
-.links {
-  display: flex;
-  justify-content: flex-end;
-}
-
-li {
-  margin-right: 10px;
-  text-decoration: none;
-  list-style: none;
-}
-
-nav {
-  margin-right: 50px;
+* {
+  margin: 0;
+  padding: 0;
 }
