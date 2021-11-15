@@ -5,7 +5,6 @@ import { displaySalutes } from './redux/Salutes';
 
 const Greeting = () => {
   const salutes = useSelector((state) => state.saluteReducer);
-  const [salute, setSalute] = useState({});
 
   setTimeout(() => {
     window.location.reload(1);
@@ -24,15 +23,18 @@ const Greeting = () => {
     displayBody(salutes);
   }, [salutes]);
 
-  const hello = () => (
-    salutes[0] && salutes[Math.floor(Math.random() * salutes.length)].body
-  );
+  const hello = () => {
+    const Loading = 'Loading...';
+    return body[0]
+      ? body[Math.floor(Math.random() * body.length)].greeting
+      : Loading;
+  };
 
   return (
     <div className="display">
       <h2>Display random salutes </h2>
       <hr />
-      <p>{salutes && hello()}</p>
+      <p>{hello()}</p>
     </div>
   );
 };

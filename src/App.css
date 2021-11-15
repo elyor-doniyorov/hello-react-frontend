@@ -14,3 +14,18 @@
 hr {
   width: 70%;
 }
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin-right: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  margin-right: 50px;
+}

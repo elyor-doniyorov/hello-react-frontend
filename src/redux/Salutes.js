@@ -1,4 +1,4 @@
-const DISPLAY_SALUTES = 'DISPLAY_SALUTES';
+const DISPLAY_SALUTES = 'HELLO/DISPLAY_SALUTES';
 
 const loadSalutes = (json) => ({
   type: DISPLAY_SALUTES,
@@ -9,10 +9,10 @@ const saluteReducer = (state = [], action) => {
   switch (action.type) {
     case DISPLAY_SALUTES:
       return action.json.map((salute) => {
-        const { id, body } = salute;
+        const { id, greeting } = salute;
         return {
           id,
-          body,
+          greeting,
         };
       });
     default:
@@ -22,7 +22,7 @@ const saluteReducer = (state = [], action) => {
 
 const displaySalutes = () => (dispatch) => {
   fetch('http://localhost:3000/api/v1/salutes/')
-    .then((response) => response.json())
+    .then((Response) => Response.json())
     .then((json) => dispatch(loadSalutes(json)));
 };
 
