@@ -11,12 +11,14 @@ const Greeting = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <div className="display">
+      <h2>In order to get random salutes please re-request to server </h2>
+      <hr />
       <h1>
         <i>{salute}</i>
         !!
       </h1>
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
+.display {
+  width: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(34, 212, 78);
+  padding: 100px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+hr {
+  width: 70%;
 }
